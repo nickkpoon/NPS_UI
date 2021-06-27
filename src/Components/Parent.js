@@ -5,47 +5,47 @@ const Parent = ({ handleClick }) => (
   <div>
     <Child
       name="10"
-      handleClick={(e) => handleClick(e.target.valueAsNumber)}
+      handleClick={(e) => handleClick(10, e.target.valueAsNumber)}
     />
     <Child
       name="9"
-      handleClick={() => handleClick("Second Item is Clicked!")}
+      handleClick={(e) => handleClick(9, e.target.valueAsNumber)}
     />
     <Child
       name="8"
-      handleClick={() => handleClick("Third Item is Clicked!")}
+      handleClick={(e) => handleClick(8, e.target.valueAsNumber)}
     />
     <Child
       name="7"
-      handleClick={() => handleClick("Third Item is Clicked!")}
+      handleClick={(e) => handleClick(7, e.target.valueAsNumber)}
     />
     <Child
       name="6"
-      handleClick={() => handleClick("Third Item is Clicked!")}
+      handleClick={(e) => handleClick(6, e.target.valueAsNumber)}
     />
     <Child
       name="5"
-      handleClick={() => handleClick("Third Item is Clicked!")}
+      handleClick={(e) => handleClick(5, e.target.valueAsNumber)}
     />
     <Child
       name="4"
-      handleClick={() => handleClick("Third Item is Clicked!")}
+      handleClick={(e) => handleClick(4, e.target.valueAsNumber)}
     />
     <Child
       name="3"
-      handleClick={() => handleClick("Third Item is Clicked!")}
+      handleClick={(e) => handleClick(3, e.target.valueAsNumber)}
     />
     <Child
       name="2"
-      handleClick={() => handleClick("Third Item is Clicked!")}
+      handleClick={(e) => handleClick(2, e.target.valueAsNumber)}
     />
     <Child
       name="1"
-      handleClick={() => handleClick("Third Item is Clicked!")}
+      handleClick={(e) => handleClick(1, e.target.valueAsNumber)}
     />
     <Child
       name="0"
-      handleClick={() => handleClick("Third Item is Clicked!")}
+      handleClick={(e) => handleClick(0, e.target.valueAsNumber)}
     />
   </div>
 );
