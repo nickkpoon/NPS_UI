@@ -64,6 +64,10 @@ function Calculator() {
 
   const [click, setClick] = useState(0);
   const [list, setList] = useState(initialList);
+  const [promotor, setPromotor] = useState(0);
+  const [detractor, setDetractor] = useState(0);
+  const [neutral, setNeutral] = useState(0);
+
 
    
   function handleClick(id, count) {
@@ -75,11 +79,25 @@ function Calculator() {
           ...item,
           count: count,
         };
+
         return updatedItem;
       }
+
       return item;
     });
     setList(newList);
+    calculate(newList);
+  }
+
+  function calculate(list) {
+    const newPromotor = list[10].count + list[9].count;
+    const newNeutral = list[7].count + list[8].count;
+    const newDetractor = list[6].count + list[5].count + list[4].count + list[3].count + list[2].count + list[1].count + list[0].count; 
+
+    setPromotor(newPromotor);
+    setDetractor(newDetractor);
+    setNeutral(newNeutral);
+
   }
  
   return (
@@ -96,6 +114,11 @@ function Calculator() {
           </span>
         </li>
       ))}
+
+      <span>{promotor}</span>
+      <span>{detractor}</span>
+      <span>{neutral}</span>
+
 
     </ul>
   );
