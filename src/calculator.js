@@ -60,24 +60,10 @@ const initialList = [
   }
 ];
 
-// const initialList = {
-//   ten: {count : 0},
-//   positive: {count: 0},
-//   negative: {count: 0},
-//   neuitral: {count: 0},
-//   score: {count: 0}
-// }
 function Calculator() {
-  //const [inputState, setInputState] = useState(0);
-
 
   const [click, setClick] = useState(0);
   const [list, setList] = useState(initialList);
-  // const [name, setName] = React.useState('');
-
-  // const handleClick = name => {
-  //   setClick(name);
-  // };
 
    
   function handleClick(id, count) {
