@@ -4,15 +4,47 @@ import Child from "./Child";
 const Parent = ({ handleClick }) => (
   <div>
     <Child
-      name="First Item"
-      handleClick={() => handleClick("First Item is Clicked!")}
+      name="10"
+      handleClick={(e) => handleClick(e.target.valueAsNumber)}
     />
     <Child
-      name="Second Item"
+      name="9"
       handleClick={() => handleClick("Second Item is Clicked!")}
     />
     <Child
-      name="Third Item"
+      name="8"
+      handleClick={() => handleClick("Third Item is Clicked!")}
+    />
+    <Child
+      name="7"
+      handleClick={() => handleClick("Third Item is Clicked!")}
+    />
+    <Child
+      name="6"
+      handleClick={() => handleClick("Third Item is Clicked!")}
+    />
+    <Child
+      name="5"
+      handleClick={() => handleClick("Third Item is Clicked!")}
+    />
+    <Child
+      name="4"
+      handleClick={() => handleClick("Third Item is Clicked!")}
+    />
+    <Child
+      name="3"
+      handleClick={() => handleClick("Third Item is Clicked!")}
+    />
+    <Child
+      name="2"
+      handleClick={() => handleClick("Third Item is Clicked!")}
+    />
+    <Child
+      name="1"
+      handleClick={() => handleClick("Third Item is Clicked!")}
+    />
+    <Child
+      name="0"
       handleClick={() => handleClick("Third Item is Clicked!")}
     />
   </div>
