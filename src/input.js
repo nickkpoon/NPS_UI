@@ -42,6 +42,7 @@
 
 import React, { useState } from "react";
 
+
 function Input(props)  {
   const [inputState, setInputState] = useState(0);
 
@@ -56,6 +57,7 @@ function Input(props)  {
   </div>
   );
 };
+
 
 export default Input;
 
