@@ -17,19 +17,19 @@ const Parent = ({ handleClick }) => (
                             <div class="smiley_face"></div>
                             <div class="both-group-total">
                                 <div class="group-total">
-                                    <div class="input_number">10</div>
+                                    <div class="input_number green">10</div>
                                     <div>
                                         <Child name="10" handleClick={(e) => handleClick(10, e.target.valueAsNumber)} />
                                     </div>
                                 </div>
                                 <div class="group-total">
-                                    <div class="input_number">9</div>
+                                    <div class="input_number green">9</div>
                                     <div>
                                         <Child name="9" handleClick={(e) => handleClick(9, e.target.valueAsNumber)} />
                                     </div>
                                 </div>
                             </div>
-                            <div class="line"></div>
+                            <div class="promotor_line_total"></div>
                         </div>
                     </div>
                     <div class="column_3">
@@ -37,13 +37,13 @@ const Parent = ({ handleClick }) => (
                             <div class="neutral_face"></div>
                             <div class="both-group-total">
                                 <div class="group-total">
-                                    <div class="input_number">8</div>
+                                    <div class="input_number grey">8</div>
                                     <div>
                                         <Child name="8" handleClick={(e) => handleClick(8, e.target.valueAsNumber)} />
                                     </div>
                                 </div>
                                 <div class="group-total">
-                                    <div class="input_number">7</div>
+                                    <div class="input_number grey">7</div>
                                     <div>
                                         <Child name="7" handleClick={(e) => handleClick(7, e.target.valueAsNumber)} />
                                     </div>
@@ -57,53 +57,53 @@ const Parent = ({ handleClick }) => (
                             <div class="sad_face"></div>
                             <div class="both-group-total">
                                 <div class="group-total">
-                                    <div class="input_number">6</div>
+                                    <div class="input_number red">6</div>
                                     <div>
                                         <Child name="6" handleClick={(e) => handleClick(6, e.target.valueAsNumber)} />
                                     </div>
                                 </div>
                                 <div class="group-total">
-                                    <div class="input_number">5</div>
+                                    <div class="input_number red">5</div>
                                     <div>
                                         <Child name="5" handleClick={(e) => handleClick(5, e.target.valueAsNumber)} />
                                     </div>
                                 </div>
                                 <div class="group-total">
-                                    <div class="input_number">4</div>
+                                    <div class="input_number red">4</div>
                                     <div>
                                         <Child name="4" handleClick={(e) => handleClick(4, e.target.valueAsNumber)} />
                                     </div>
                                 </div>
                                 <div class="group-total">
-                                    <div class="input_number">3</div>
+                                    <div class="input_number red">3</div>
                                     <div>
                                         <Child name="3" handleClick={(e) => handleClick(3, e.target.valueAsNumber)} />
                                     </div>
                                 </div>
                                 <div class="group-total">
-                                    <div class="input_number">2</div>
+                                    <div class="input_number red">2</div>
                                     <div>
                                         <Child name="2" handleClick={(e) => handleClick(2, e.target.valueAsNumber)} />
                                     </div>
                                 </div>
                                 <div class="group-total">
-                                    <div class="input_number">1</div>
+                                    <div class="input_number red">1</div>
                                     <div>
                                         <Child name="1" handleClick={(e) => handleClick(1, e.target.valueAsNumber)} />
                                     </div>
                                 </div>
                                 <div class="group-total">
-                                    <div class="input_number">0</div>
+                                    <div class="input_number red">0</div>
                                     <div>
                                         <Child name="0" handleClick={(e) => handleClick(0, e.target.valueAsNumber)} />
                                     </div>
                                 </div>
                             </div>
-                            <div class="line"></div>
+                            <div class="detractor_line_total"></div>
                         </div>
                     </div>
                 </div>
-                <div class="row-1">
+                <div class="row-2">
                     <div class="column_1">
                         <div class="nps_text">
                             <h4>Group the responses</h4>
@@ -115,13 +115,13 @@ const Parent = ({ handleClick }) => (
                             <div class="smiley_face"></div>
                             <div class="both-group-total">
                                 <div class="group-total">
-                                    <div class="input_number">Total</div>
+                                    <div class="input_number green">Total</div>
                                     <div>
                                         <Child name="10" handleClick={(e) => handleClick(10, e.target.valueAsNumber)} />
                                     </div>
                                 </div>
                             </div>
-                            <div class="line"></div>
+                            <div class="promotor_line_score"></div>
                         </div>
                     </div>
                     <div class="column_3">
@@ -129,7 +129,7 @@ const Parent = ({ handleClick }) => (
                             <div class="neutral_face"></div>
                             <div class="both-group-total">
                                 <div class="group-total">
-                                    <div class="input_number">Total</div>
+                                    <div class="input_number grey">Total</div>
                                     <div>
                                         <Child name="8" handleClick={(e) => handleClick(8, e.target.valueAsNumber)} />
                                     </div>
@@ -143,17 +143,17 @@ const Parent = ({ handleClick }) => (
                             <div class="sad_face"></div>
                             <div class="both-group-total">
                                 <div class="group-total">
-                                    <div class="input_number">Total</div>
+                                    <div class="input_number red">Total</div>
                                     <div>
                                         <Child name="6" handleClick={(e) => handleClick(6, e.target.valueAsNumber)} />
                                     </div>
                                 </div>
                             </div>
-                            <div class="line"></div>
+                            <div class="detractor_line_score"></div>
                         </div>
                     </div>
                 </div>
-                <div class="row-1">
+                <div class="row-3">
                     <div class="column_1">
                         <div class="nps_text">
                             <h4>Calculate your NPS</h4>
@@ -165,9 +165,9 @@ const Parent = ({ handleClick }) => (
                             <div class="smiley_face"></div>
                             <div class="both-group-total">
                                 <div class="group-total">
-                                    <div class="input_number">Total</div>
+                                    <div class="input_number green">Total</div>
                                     <div>
-                                        <Child name="10" handleClick={(e) => handleClick(10, e.target.valueAsNumber)} />
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -179,9 +179,9 @@ const Parent = ({ handleClick }) => (
                             <div class="sad_face"></div>
                             <div class="both-group-total">
                                 <div class="group-total">
-                                    <div class="input_number">Total</div>
+                                    <div class="input_number red">Total</div>
                                     <div>
-                                        <Child name="8" handleClick={(e) => handleClick(8, e.target.valueAsNumber)} />
+
                                     </div>
                                 </div>
                             </div>
@@ -193,9 +193,9 @@ const Parent = ({ handleClick }) => (
                             <div class="nps_face"></div>
                             <div class="both-group-total">
                                 <div class="group-total">
-                                    <div class="input_number">Total</div>
+                                    <div class="input_number grey">Total</div>
                                     <div>
-                                        <Child name="6" handleClick={(e) => handleClick(6, e.target.valueAsNumber)} />
+
                                     </div>
                                 </div>
                             </div>
