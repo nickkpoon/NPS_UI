@@ -311,11 +311,7 @@ function Calculator() {
         </div>
     </div>
 </div>
-
-
-
-
   );
 }
    
-   export default Calculator;
+export default Calculator;
