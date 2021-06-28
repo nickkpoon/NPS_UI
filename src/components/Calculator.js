@@ -58,7 +58,7 @@ function Calculator() {
   const [detractorPercent, setDetractorPercent] = useState(0);
   const [score, setScore] = useState(0);
 
-  function handleClick(id, count) {
+  function handleInput(id, count) {
 
     const newList = list.map((item) => {
       if (item.id === id) {
@@ -122,13 +122,13 @@ function Calculator() {
                             <div class="group-total">
                                 <div class="input_number green">10</div>
                                 <div>
-                                    <Child handleClick={(e) => handleClick(10, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(10, e.target.valueAsNumber)} />
                                 </div>
                             </div>
                             <div class="group-total">
                                 <div class="input_number green">9</div>
                                 <div>
-                                    <Child handleClick={(e) => handleClick(9, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(9, e.target.valueAsNumber)} />
                                 </div>
                             </div>
                         </div>
@@ -142,13 +142,13 @@ function Calculator() {
                             <div class="group-total">
                                 <div class="input_number grey">8</div>
                                 <div>
-                                    <Child handleClick={(e) => handleClick(8, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(8, e.target.valueAsNumber)} />
                                 </div>
                             </div>
                             <div class="group-total">
                                 <div class="input_number grey">7</div>
                                 <div>
-                                    <Child handleClick={(e) => handleClick(7, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(7, e.target.valueAsNumber)} />
                                 </div>
                             </div>
                         </div>
@@ -162,43 +162,43 @@ function Calculator() {
                             <div class="group-total">
                                 <div class="input_number red">6</div>
                                 <div>
-                                    <Child handleClick={(e) => handleClick(6, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(6, e.target.valueAsNumber)} />
                                 </div>
                             </div>
                             <div class="group-total">
                                 <div class="input_number red">5</div>
                                 <div>
-                                    <Child handleClick={(e) => handleClick(5, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(5, e.target.valueAsNumber)} />
                                 </div>
                             </div>
                             <div class="group-total">
                                 <div class="input_number red">4</div>
                                 <div>
-                                    <Child handleClick={(e) => handleClick(4, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(4, e.target.valueAsNumber)} />
                                 </div>
                             </div>
                             <div class="group-total">
                                 <div class="input_number red">3</div>
                                 <div>
-                                    <Child handleClick={(e) => handleClick(3, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(3, e.target.valueAsNumber)} />
                                 </div>
                             </div>
                             <div class="group-total">
                                 <div class="input_number red">2</div>
                                 <div>
-                                    <Child handleClick={(e) => handleClick(2, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(2, e.target.valueAsNumber)} />
                                 </div>
                             </div>
                             <div class="group-total">
                                 <div class="input_number red">1</div>
                                 <div>
-                                    <Child handleClick={(e) => handleClick(1, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(1, e.target.valueAsNumber)} />
                                 </div>
                             </div>
                             <div class="group-total">
                                 <div class="input_number red">0</div>
                                 <div>
-                                    <Child handleClick={(e) => handleClick(0, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(0, e.target.valueAsNumber)} />
                                 </div>
                             </div>
                         </div>

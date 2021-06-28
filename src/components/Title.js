@@ -1,6 +1,6 @@
 import React from "react";
 
-const Title = ({ value, handleClick }) =>
+const Title = ({ value, handleInput }) =>
     <div>
         <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar-2 w-nav">
         <nav role="navigation" class="nav-menu">
