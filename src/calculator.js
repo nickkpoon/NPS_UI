@@ -91,28 +91,27 @@ function Calculator() {
   return (
 
     
-    <div>
+    // <ul>
 
-      <Parent handleClick={handleClick} />
-      {/* {click && <p>{click} is clicked.</p>}
-
-
-      {list.map((item) => (
-        <li key={item}>
-         <span>
-            {item.count}
-          </span>
-        </li>
-      ))}
-
-      <span>{promotor}</span>
-      <span>{detractor}</span>
-      <span>{neutral}</span> */}
+    //   <Parent handleClick={handleClick} />
+    //   {click && <p>{click} is clicked.</p>}
 
 
-    </div>
+    //   {list.map((item) => (
+    //     <li key={item}>
+    //      <span>
+    //         {item.count}
+    //       </span>
+    //     </li>
+    //   ))}
+
+    //   <span>{promotor}</span>
+    //   <span>{detractor}</span>
+    //   <span>{neutral}</span>
 
 
+    // </ul>
+    <Parent handleClick={handleClick} />
   );
 }
    
