@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './styles/styles.css';
-import Child from "./components/Child";
+import Child from "./componentss/Child";
 const initialList = [
   {
     id: 0,
@@ -58,8 +58,6 @@ function Calculator() {
   const [detractorPercent, setDetractorPercent] = useState(0);
   const [score, setScore] = useState(0);
 
-
-   
   function handleClick(id, count) {
 
     const newList = list.map((item) => {
