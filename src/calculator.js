@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './styles/styles.css';
-import Child from "./componentss/Child";
+import Child from "./components/Child";
 const initialList = [
   {
     id: 0,
