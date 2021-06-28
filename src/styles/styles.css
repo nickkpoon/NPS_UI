@@ -34,6 +34,12 @@ p {
 
 }
 
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
 .green {
     color:#A2B800;
 }
@@ -395,3 +401,149 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.w-form {
+    margin: 0 0 15px;
+}
+
+.w-input {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.w-button {
+    display: inline-block;
+    padding: 9px 15px;
+    background-color: #3898EC;
+    color: white;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+  }
+
+.text-field {
+    width: 166px;
+    height: 24px;
+    margin-right: 8px;
+    margin-bottom: 0px;
+    border-radius: 20px 4px 4px 20px;
+}
+
+.text-field-2 {
+    width: 166px;
+    height: 24px;
+    margin-right: 8px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+}
+
+
+.sectionn {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .containerr {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .heading-7 {
+    margin-top: 0px;
+    margin-bottom: 42px;
+    text-align: center;
+  }
+
+.sign-up-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 42px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.get-started-form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+
+.submit-button-2 {
+width: 152px;
+height: 42px;
+border-radius: 4px 20px 20px 4px;
+}
+
+.text-block-10 {
+margin-right: 16px;
+margin-left: 16px;
+}
+
+.text-block-11 {
+margin-left: 10px;
+}
+
+.google-sign-up-buttoon-link-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 192px;
+    height: 42px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    color: #54565a;
+    text-decoration: none;
+  }
+
+.social-media-buttons {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+}
+
+.image-30 {
+margin-right: 16px;
+}
+
