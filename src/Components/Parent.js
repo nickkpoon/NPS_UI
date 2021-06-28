@@ -153,7 +153,56 @@ const Parent = ({ handleClick }) => (
                         </div>
                     </div>
                 </div>
-                
+                <div class="row-1">
+                    <div class="column_1">
+                        <div class="nps_text">
+                            <h4>Calculate your NPS</h4>
+                            <p>Subtract the percentage of Detractors from the percentage of Promotors.</p>
+                        </div>
+                    </div>
+                    <div class="column_2">
+                    <div class="promotor_score">
+                            <div class="smiley_face"></div>
+                            <div class="both-group-total">
+                                <div class="group-total">
+                                    <div class="input_number">Total</div>
+                                    <div>
+                                        <Child name="10" handleClick={(e) => handleClick(10, e.target.valueAsNumber)} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="column_3">
+                        <div class="detractor_score">
+                            <div class="sad_face"></div>
+                            <div class="both-group-total">
+                                <div class="group-total">
+                                    <div class="input_number">Total</div>
+                                    <div>
+                                        <Child name="8" handleClick={(e) => handleClick(8, e.target.valueAsNumber)} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="column_4">
+                    <div class="nps_score">
+                            <div class="nps_face"></div>
+                            <div class="both-group-total">
+                                <div class="group-total">
+                                    <div class="input_number">Total</div>
+                                    <div>
+                                        <Child name="6" handleClick={(e) => handleClick(6, e.target.valueAsNumber)} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
