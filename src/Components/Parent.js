@@ -129,7 +129,8 @@ const Parent = ({ handleClick }) => (
               </div>
               <div class="group-total">
                 <div class="_3">3</div>
-                <div class="input-field">    <Child
+                <div class="input-field">    
+                <Child
       name="3"
       handleClick={(e) => handleClick(3, e.target.valueAsNumber)}
     /></div>

@@ -47,7 +47,7 @@ border-radius: 4px;
 width: 438px;
 height: 149px;
 
-border: 1px solid #EF8566;
+border: 1.5px solid #EB1815;
 box-sizing: border-box;
 border-radius: 6px;
 }
@@ -61,4 +61,13 @@ border-radius: 6px;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+}
+
+.input-field {
+    width: 48px;
+height: 48px;
+    background: #FFFFFF;
+border: 1px solid #BEBEB8;
+box-sizing: border-box;
+border-radius: 6px;
 }
