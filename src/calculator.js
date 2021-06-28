@@ -73,8 +73,8 @@ function Calculator() {
 
       return item;
     });
-    setList(newList);
     calculate(newList);
+    setList(newList);
   }
 
   function calculate(list) {

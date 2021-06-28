@@ -74,8 +74,20 @@ p {
     
 }
 
-.nps_promotor {
+.promotor_input {
     width: 152px;
+    height: 150px;
+    background: #FFFFFF;
+    border: 1.5px solid #A2B800;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 10px 10px 22px 10px;
+}
+
+.promotor_total {
+    width: 112px;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 150px;
     background: #FFFFFF;
     border: 1.5px solid #A2B800;
@@ -96,7 +108,7 @@ p {
     background-image: url('../assets/smiley_face.svg');
 }
 
-.nps_neutral {
+.neutral_input {
     width: 152px;
     height: 150px;
     background: #FFFFFF;
@@ -106,8 +118,32 @@ p {
     padding: 10px 10px 22px 10px;
 }
 
-.nps_detractor {
+.neutral_total {
+    width: 112px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 150px;
+    background: #FFFFFF;
+    border: 1.5px solid #474645;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 10px 10px 22px 10px;
+}
+
+.detractor_input {
     width: 438px;
+    height: 150px;
+    background: #FFFFFF;
+    border: 1.5px solid #EB1815;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 10px 10px 22px 10px;
+}
+
+.detractor_total{
+    width: 112px;
+    margin-left: 163px;
+    margin-right: 163px;
     height: 150px;
     background: #FFFFFF;
     border: 1.5px solid #EB1815;
