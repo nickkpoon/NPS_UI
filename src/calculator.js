@@ -72,11 +72,9 @@ function Calculator() {
       }
       return item;
     });
-
     setList(newList);
 
     CountTotal(newList);
-
   }
 
   function CountTotal(list) {
@@ -98,8 +96,6 @@ function Calculator() {
     detractorPercent = ((detractorCount/totalCount) * 100).toFixed();
     score = promotorPercent - detractorPercent;
 
-
-
     setPromotor(promotorCount);
     setNeutral(neutralCount);
     setDetractor(detractorCount);
@@ -107,14 +103,12 @@ function Calculator() {
     setPromotorPercent(promotorPercent);
     setDetractorPercent(detractorPercent);
     setScore(score);
-
-
-
   }
 
   return (
-    <div class="nps_section">
-      <div class="container">
+    
+    <div class="calculator_section">
+      <div class="calculator_container">
         <div class="calc">
             <div class="row-1">
                 <div class="column_1">
