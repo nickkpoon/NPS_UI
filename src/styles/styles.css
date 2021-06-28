@@ -1,13 +1,17 @@
 .App {
     font-family: sans-serif;
     text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 :root,
 html,
 body {
     width: 100%;
-    height: 100%;
+    margin-left: 100%;
+    margin-right: 100%;
     margin: 0;
 }
 
@@ -80,7 +84,7 @@ img {
 }
 
 .title_section {
-    width: 100vw;
+    width: 100%;
     height: 200px;
     background: #FFFFFF;
     padding-top: 65px;
@@ -95,7 +99,7 @@ img {
 }
 
 .footer_section {
-    width: 100vw;
+    width: 100%;
     height: 200px;
     background: #FFFFFF;
     padding-top: 85px;
@@ -110,7 +114,7 @@ img {
 }
 
 .calculator_section {
-    width: 100vw;
+    width: 100%;
     height: 634px;
     background: #F4F4F4;
     padding-top: 85px;
@@ -347,6 +351,8 @@ img {
     box-sizing: border-box;
     border-radius: 6px;
     padding: 10px 10px 22px 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .detractor_score {
@@ -359,6 +365,8 @@ img {
     box-sizing: border-box;
     border-radius: 6px;
     padding: 10px 10px 22px 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .nps_score {
@@ -371,6 +379,8 @@ img {
     box-sizing: border-box;
     border-radius: 6px;
     padding: 10px 10px 22px 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -385,7 +395,6 @@ img {
 }
 
 .group-total {
-
     display: flex;
     margin-left: 4px;
     margin-right: 4px;
@@ -394,6 +403,17 @@ img {
     -webkit-box-align: center;
     -webkit-flex-direction: column;
     -webkit-align-items: center;
+}
+
+.group_score_total {
+    display: flex;
+    margin-left: 4px;
+    margin-right: 4px;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    -webkit-flex-direction: column;
+    -webkit-align-items: center;
+    margin-top: -10px;
 
 }
 
@@ -417,6 +437,28 @@ img {
     text-align: center;
 }
 
+.score_text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 4px;
+    
+    text-align: center;
+}
+
+.score_text_below {
+    width: 64px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    /* or 138% */
+    
+    text-align: center;
+}
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

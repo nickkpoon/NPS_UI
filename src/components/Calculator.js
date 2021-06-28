@@ -220,7 +220,7 @@ function Calculator() {
                             <div class="group-total">
                                 <div class="input_number green">Total</div>
                                 <div>
-                                    <input class="input-field" value={promotor} readonly></input>
+                                    <input class="input-field" value={promotor} readOnly></input>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +234,7 @@ function Calculator() {
                             <div class="group-total">
                                 <div class="input_number grey">Total</div>
                                 <div>
-                                  <input class="input-field" value={neutral} readonly></input>
+                                  <input class="input-field" value={neutral} readOnly></input>
                                 </div>
                             </div>
                         </div>
@@ -248,7 +248,7 @@ function Calculator() {
                             <div class="group-total">
                                 <div class="input_number red">Total</div>
                                 <div>
-                                  <input class="input-field" value={detractor} readonly></input>
+                                  <input class="input-field" value={detractor} readOnly></input>
                                 </div>
                             </div>
                         </div>
@@ -267,44 +267,40 @@ function Calculator() {
                 <div class="promotor_score">
                         <div class="smiley_face"></div>
                         <div class="both-group-total">
-                            <div class="group-total">
-                                <div class="input_number green">Total</div>
-                                <div>
-                                <input class="input-field" value={promotorPercent} readonly></input>                              
+                            <div class="group_score_total">
+                                <div class="score_text green">{promotorPercent}%</div>
+                                <div class="score_text_below green">
+                                of total responses                            
                                 </div>
                             </div>
                         </div>
-                        <div class="line"></div>
                     </div>
                 </div>
                 <div class="column_3">
                     <div class="detractor_score">
                         <div class="sad_face"></div>
                         <div class="both-group-total">
-                            <div class="group-total">
-                                <div class="input_number red">Total</div>
-                                <div>
-                                <input class="input-field" value={detractorPercent} readonly></input>
+                            <div class="group_score_total">
+                                <div class="score_text red">{detractorPercent}%</div>
+                                <div class="score_text_below red">
+                                of total responses                            
 
                                 </div>
                             </div>
                         </div>
-                        <div class="line"></div>
                     </div>
                 </div>
                 <div class="column_4">
                 <div class="nps_score">
                         <div class="nps_face"></div>
                         <div class="both-group-total">
-                            <div class="group-total">
-                                <div class="input_number grey">Total</div>
-                                <div>
-                                <input class="input-field" value={score} readonly></input>
-
+                            <div class="group_score_total">
+                                <div class="score_text grey">{score}</div>
+                                <div class="score_text_below grey">
+                                This is your NPS
                                 </div>
                             </div>
                         </div>
-                        <div class="line"></div>
                     </div>
                 </div>
             </div>
