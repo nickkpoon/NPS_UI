@@ -128,7 +128,7 @@ img {
 
 }
 
-.row-1 {
+.row_1 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -140,7 +140,7 @@ img {
     -webkit-align-items: center;
   }
 
-.row-2 {
+.row_2 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -152,7 +152,7 @@ img {
     -webkit-align-items: center;
 }
 
-.row-3 {
+.row_3 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
