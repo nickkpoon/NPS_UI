@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {clearFields} from './123.js';
+import {clearFields} from './Utils.js';
 import '../styles/styles.css';
 const initialList = [
     {
