@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Child from "./Child";
+import {clearFields} from './utils.js';
 import '../styles/styles.css';
 const initialList = [
     {
@@ -57,7 +57,6 @@ function Calculator() {
     const [promotorPercent, setPromotorPercent] = useState(0);
     const [detractorPercent, setDetractorPercent] = useState(0);
     const [score, setScore] = useState(0);
-    const ref = React.createRef();
 
     function Clear() {
         setList(initialList);
@@ -72,7 +71,8 @@ function Calculator() {
     }
 
     function HandleReset() {
-
+        Clear();
+        clearFields();
     }
 
     function handleInput(inputScore, input) {
@@ -283,7 +283,7 @@ function Calculator() {
                             <div className="nps_text">
                                 <h4>Calculate your NPS</h4>
                                 <p>Subtract the percentage of Detractors from the percentage of Promotors.</p>
-                                <div onClick={() => HandleReset()}>Start Over</div>
+                                <a class="start_over_button" onClick={() => HandleReset()}>Start over</a>
                             </div>
                         </div>
                         <div className="column_2">
@@ -299,6 +299,7 @@ function Calculator() {
                                 </div>
                             </div>
                         </div>
+                        <div className="minus"></div>
                         <div className="column_3">
                             <div className="detractor_score">
                                 <div className="sad_face"></div>
@@ -313,6 +314,7 @@ function Calculator() {
                                 </div>
                             </div>
                         </div>
+                        <div className="equal"></div>
                         <div className="column_4">
                             <div className="nps_score">
                                 <div className="nps_face"></div>
