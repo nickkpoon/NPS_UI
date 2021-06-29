@@ -3,47 +3,47 @@ import Child from "./Child";
 import '../styles/styles.css';
 const initialList = [
   {
-    id: 0,
+    score: 0,
     count: 0,
   },
   {
-    id: 1,
+    score: 1,
     count: 0,
   },
   {
-    id: 2,
+    score: 2,
     count: 0,
   },
   {
-    id: 3,
+    score: 3,
     count: 0,
   },
   {
-    id: 4,
+    score: 4,
     count: 0,
   },
   {
-    id: 5,
+    score: 5,
     count: 0,
   },
   {
-    id: 6,
+    score: 6,
     count: 0,
   },
   {
-    id: 7,
+    score: 7,
     count: 0,
   },
   {
-    id: 8,
+    score: 8,
     count: 0,
   },
   {
-    id: 9,
+    score: 9,
     count: 0,
   },
   {
-    id: 10,
+    score: 10,
     count: 0,
   }
 ];
@@ -57,16 +57,25 @@ function Calculator() {
   const [promotorPercent, setPromotorPercent] = useState(0);
   const [detractorPercent, setDetractorPercent] = useState(0);
   const [score, setScore] = useState(0);
+  const ref = React.createRef();
 
-  function handleInput(id, input) {
+  function Clear(){
+    setList(initialList);
+    CountTotal(initialList);
+  }
 
+  function HandleReset(){
+
+  }
+
+  function handleInput(inputScore, input) {
     let inputInteger = 0;
     inputInteger = parseInt(input, 10);
     
     if (isNaN(inputInteger)) { inputInteger = 0; }
 
     const newList = list.map((item) => {
-      if (item.id === id) {
+      if (item.score === inputScore) {
         const updatedItem = {...item, count: inputInteger};
         return updatedItem;
       }
@@ -107,6 +116,8 @@ function Calculator() {
     setScore(score);
   }
 
+
+
   return (
     
     <div className="calculator_section">
@@ -146,7 +157,7 @@ function Calculator() {
                             <div className="group-total">
                                 <div className="input_number grey">8</div>
                                 <div>
-                                    <Child handleInput={(e) => handleInput(8, e.target.value)} />
+                                    <Child ref = {ref}  handleInput={(e) => handleInput(8, e.target.value)} />
                                 </div>
                             </div>
                             <div className="group-total">
@@ -265,6 +276,7 @@ function Calculator() {
                     <div className="nps_text">
                         <h4>Calculate your NPS</h4>
                         <p>Subtract the percentage of Detractors from the percentage of Promotors.</p>
+                        <div onClick={() =>HandleReset()}>Start Over</div>
                     </div>
                 </div>
                 <div className="column_2">
