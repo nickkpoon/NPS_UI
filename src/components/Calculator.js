@@ -95,6 +95,7 @@ function Calculator() {
         ProcessCount(newList);
     }
 
+    //process survey counts and set scores
     function ProcessCount(list) {
         let promotorCount = 0;
         let neutralCount = 0;
@@ -126,10 +127,7 @@ function Calculator() {
         setScore(score);
     }
 
-
-
     return (
-
         <div className="calculator_section">
             <div className="calculator_container">
                 <div className="calc">

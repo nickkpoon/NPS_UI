@@ -1,16 +1,17 @@
 import React from "react";
+import downArrow from  '../assets/down_arrow.svg';
 
 const Title = () =>
-    <div>
+    <div >
         <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" className="navbar">
         <nav role="navigation" className="nav_menu">
-                <a href="#" className="nav_item">Product</a>
+                <a href="#" className="nav_item">Product <img src={downArrow} className="down_arrow"/></a>
                 <a href="#" className="nav_item">Customers</a>
                 <a href="#" className="nav_item">Enterprise</a>
                 <a href="#" className="nav_item">Pricing</a>
             </nav>
             <nav role="navigation" className="nav_menu">
-                <a href="#" className="nav_item">Help</a>
+                <a href="#" className="nav_item">Help <img src={downArrow} className="down_arrow"/></a>
                 <a href="#" className="nav_item">Get started for free</a>
                 <a href="#" className="nav_item">Sign in</a>
             </nav>

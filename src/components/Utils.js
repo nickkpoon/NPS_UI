@@ -4,5 +4,3 @@ export function clearFields() {
         inputs[i].value='';
      }
 }
-
-

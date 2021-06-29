@@ -678,3 +678,9 @@ input[type=number] {
     height: 12px;
     background-image: url('../assets/equal.svg');
 }
+
+.down_arrow {
+    margin-left: 2px;
+    width: 10px;
+    height: 5px;
+}
