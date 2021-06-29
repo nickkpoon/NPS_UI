@@ -58,20 +58,22 @@ function Calculator() {
   const [detractorPercent, setDetractorPercent] = useState(0);
   const [score, setScore] = useState(0);
 
-  function handleInput(id, count) {
+  function handleInput(id, input) {
+
+    let inputInteger = 0;
+    inputInteger = parseInt(input, 10);
+    
+    if (isNaN(inputInteger)) { inputInteger = 0; }
 
     const newList = list.map((item) => {
       if (item.id === id) {
-        const updatedItem = {
-          ...item,
-          count: count,
-        };
+        const updatedItem = {...item, count: inputInteger};
         return updatedItem;
       }
       return item;
     });
-    setList(newList);
 
+    setList(newList);
     CountTotal(newList);
   }
 
@@ -90,9 +92,11 @@ function Calculator() {
     detractorCount = list[6].count + list[5].count + list[4].count + list[3].count + list[2].count + list[1].count + list[0].count;
     totalCount = promotorCount + neutralCount + detractorCount;
 
-    promotorPercent = ((promotorCount/totalCount) * 100).toFixed();
-    detractorPercent = ((detractorCount/totalCount) * 100).toFixed();
-    score = promotorPercent - detractorPercent;
+    if (totalCount > 0) {           //avoid dividing by 0 caused by backspace
+        promotorPercent = ((promotorCount/totalCount) * 100).toFixed();
+        detractorPercent = ((detractorCount/totalCount) * 100).toFixed();
+        score = promotorPercent - detractorPercent;
+    }
 
     setPromotor(promotorCount);
     setNeutral(neutralCount);
@@ -105,184 +109,184 @@ function Calculator() {
 
   return (
     
-    <div class="calculator_section">
-      <div class="calculator_container">
-        <div class="calc">
-            <div class="row-1">
-                <div class="column_1">
-                    <div class="nps_text">
+    <div className="calculator_section">
+      <div className="calculator_container">
+        <div className="calc">
+            <div className="row-1">
+                <div className="column_1">
+                    <div className="nps_text">
                         <h4>Count the responses</h4>
                         <p>Add up the number of responses provided for each score.</p>
                     </div>
                 </div>
-                <div class="column_2">
-                    <div class="promotor_input">
-                        <div class="smiley_face"></div>
-                        <div class="both-group-total">
-                            <div class="group-total">
-                                <div class="input_number green">10</div>
+                <div className="column_2">
+                    <div className="promotor_input">
+                        <div className="smiley_face"></div>
+                        <div className="both-group-total">
+                            <div className="group-total">
+                                <div className="input_number green">10</div>
                                 <div>
-                                    <Child handleInput={(e) => handleInput(10, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(10, e.target.value)} />
                                 </div>
                             </div>
-                            <div class="group-total">
-                                <div class="input_number green">9</div>
+                            <div className="group-total">
+                                <div className="input_number green">9</div>
                                 <div>
-                                    <Child handleInput={(e) => handleInput(9, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(9, e.target.value)} />
                                 </div>
                             </div>
                         </div>
-                        <div class="promotor_line_total"></div>
+                        <div className="promotor_line_total"></div>
                     </div>
                 </div>
-                <div class="column_3">
-                    <div class="neutral_input">
-                        <div class="neutral_face"></div>
-                        <div class="both-group-total">
-                            <div class="group-total">
-                                <div class="input_number grey">8</div>
+                <div className="column_3">
+                    <div className="neutral_input">
+                        <div className="neutral_face"></div>
+                        <div className="both-group-total">
+                            <div className="group-total">
+                                <div className="input_number grey">8</div>
                                 <div>
-                                    <Child handleInput={(e) => handleInput(8, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(8, e.target.value)} />
                                 </div>
                             </div>
-                            <div class="group-total">
-                                <div class="input_number grey">7</div>
+                            <div className="group-total">
+                                <div className="input_number grey">7</div>
                                 <div>
-                                    <Child handleInput={(e) => handleInput(7, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(7, e.target.value)} />
                                 </div>
                             </div>
                         </div>
-                        <div class="line"></div>
+                        <div className="line"></div>
                     </div>
                 </div>
-                <div class="column_4">
-                    <div class="detractor_input">
-                        <div class="sad_face"></div>
-                        <div class="both-group-total">
-                            <div class="group-total">
-                                <div class="input_number red">6</div>
+                <div className="column_4">
+                    <div className="detractor_input">
+                        <div className="sad_face"></div>
+                        <div className="both-group-total">
+                            <div className="group-total">
+                                <div className="input_number red">6</div>
                                 <div>
-                                    <Child handleInput={(e) => handleInput(6, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(6, e.target.value)} />
                                 </div>
                             </div>
-                            <div class="group-total">
-                                <div class="input_number red">5</div>
+                            <div className="group-total">
+                                <div className="input_number red">5</div>
                                 <div>
-                                    <Child handleInput={(e) => handleInput(5, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(5, e.target.value)} />
                                 </div>
                             </div>
-                            <div class="group-total">
-                                <div class="input_number red">4</div>
+                            <div className="group-total">
+                                <div className="input_number red">4</div>
                                 <div>
-                                    <Child handleInput={(e) => handleInput(4, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(4, e.target.value)} />
                                 </div>
                             </div>
-                            <div class="group-total">
-                                <div class="input_number red">3</div>
+                            <div className="group-total">
+                                <div className="input_number red">3</div>
                                 <div>
-                                    <Child handleInput={(e) => handleInput(3, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(3, e.target.value)} />
                                 </div>
                             </div>
-                            <div class="group-total">
-                                <div class="input_number red">2</div>
+                            <div className="group-total">
+                                <div className="input_number red">2</div>
                                 <div>
-                                    <Child handleInput={(e) => handleInput(2, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(2, e.target.value)} />
                                 </div>
                             </div>
-                            <div class="group-total">
-                                <div class="input_number red">1</div>
+                            <div className="group-total">
+                                <div className="input_number red">1</div>
                                 <div>
-                                    <Child handleInput={(e) => handleInput(1, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(1, e.target.value)} />
                                 </div>
                             </div>
-                            <div class="group-total">
-                                <div class="input_number red">0</div>
+                            <div className="group-total">
+                                <div className="input_number red">0</div>
                                 <div>
-                                    <Child handleInput={(e) => handleInput(0, e.target.valueAsNumber)} />
+                                    <Child handleInput={(e) => handleInput(0, e.target.value)} />
                                 </div>
                             </div>
                         </div>
-                        <div class="detractor_line_total"></div>
+                        <div className="detractor_line_total"></div>
                     </div>
                 </div>
             </div>
-            <div class="row-2">
-                <div class="column_1">
-                    <div class="nps_text">
+            <div className="row-2">
+                <div className="column_1">
+                    <div className="nps_text">
                         <h4>Group the responses</h4>
                         <p>Add up the total number of responses provided for each group.</p>
                     </div>
                 </div>
-                <div class="column_2">
-                <div class="promotor_total">
-                        <div class="smiley_face"></div>
-                        <div class="both-group-total">
-                            <div class="group-total">
-                                <div class="input_number green">Total</div>
+                <div className="column_2">
+                <div className="promotor_total">
+                        <div className="smiley_face"></div>
+                        <div className="both-group-total">
+                            <div className="group-total">
+                                <div className="input_number green">Total</div>
                                 <div>
-                                    <input class="input-field" value={promotor} readOnly></input>
+                                    <input className="input-field" value={promotor} readOnly></input>
                                 </div>
                             </div>
                         </div>
-                        <div class="promotor_line_score"></div>
+                        <div className="promotor_line_score"></div>
                     </div>
                 </div>
-                <div class="column_3">
-                    <div class="neutral_total">
-                        <div class="neutral_face"></div>
-                        <div class="both-group-total">
-                            <div class="group-total">
-                                <div class="input_number grey">Total</div>
+                <div className="column_3">
+                    <div className="neutral_total">
+                        <div className="neutral_face"></div>
+                        <div className="both-group-total">
+                            <div className="group-total">
+                                <div className="input_number grey">Total</div>
                                 <div>
-                                  <input class="input-field" value={neutral} readOnly></input>
+                                  <input className="input-field" value={neutral} readOnly></input>
                                 </div>
                             </div>
                         </div>
-                        <div class="line"></div>
+                        <div className="line"></div>
                     </div>
                 </div>
-                <div class="column_4">
-                <div class="detractor_total">
-                        <div class="sad_face"></div>
-                        <div class="both-group-total">
-                            <div class="group-total">
-                                <div class="input_number red">Total</div>
+                <div className="column_4">
+                <div className="detractor_total">
+                        <div className="sad_face"></div>
+                        <div className="both-group-total">
+                            <div className="group-total">
+                                <div className="input_number red">Total</div>
                                 <div>
-                                  <input class="input-field" value={detractor} readOnly></input>
+                                  <input className="input-field" value={detractor} readOnly></input>
                                 </div>
                             </div>
                         </div>
-                        <div class="detractor_line_score"></div>
+                        <div className="detractor_line_score"></div>
                     </div>
                 </div>
             </div>
-            <div class="row-3">
-                <div class="column_1">
-                    <div class="nps_text">
+            <div className="row-3">
+                <div className="column_1">
+                    <div className="nps_text">
                         <h4>Calculate your NPS</h4>
                         <p>Subtract the percentage of Detractors from the percentage of Promotors.</p>
                     </div>
                 </div>
-                <div class="column_2">
-                <div class="promotor_score">
-                        <div class="smiley_face"></div>
-                        <div class="both-group-total">
-                            <div class="group_score_total">
-                                <div class="score_text green">{promotorPercent}%</div>
-                                <div class="score_text_below green">
+                <div className="column_2">
+                <div className="promotor_score">
+                        <div className="smiley_face"></div>
+                        <div className="both-group-total">
+                            <div className="group_score_total">
+                                <div className="score_text green">{promotorPercent}%</div>
+                                <div className="score_text_below green">
                                 of total responses                            
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="column_3">
-                    <div class="detractor_score">
-                        <div class="sad_face"></div>
-                        <div class="both-group-total">
-                            <div class="group_score_total">
-                                <div class="score_text red">{detractorPercent}%</div>
-                                <div class="score_text_below red">
+                <div className="column_3">
+                    <div className="detractor_score">
+                        <div className="sad_face"></div>
+                        <div className="both-group-total">
+                            <div className="group_score_total">
+                                <div className="score_text red">{detractorPercent}%</div>
+                                <div className="score_text_below red">
                                 of total responses                            
 
                                 </div>
@@ -290,13 +294,13 @@ function Calculator() {
                         </div>
                     </div>
                 </div>
-                <div class="column_4">
-                <div class="nps_score">
-                        <div class="nps_face"></div>
-                        <div class="both-group-total">
-                            <div class="group_score_total">
-                                <div class="score_text grey">{score}</div>
-                                <div class="score_text_below grey">
+                <div className="column_4">
+                <div className="nps_score">
+                        <div className="nps_face"></div>
+                        <div className="both-group-total">
+                            <div className="group_score_total">
+                                <div className="score_text grey">{score}</div>
+                                <div className="score_text_below grey">
                                 This is your NPS
                                 </div>
                             </div>

@@ -7,6 +7,6 @@ function Validate(e) {
 }
 
 const Child = ({ value, handleInput }) => 
-<input class="input-field" type="number" pattern="/^[0-9\b]+$/;" min="0" onKeyPress={(e) => {Validate(e);}} onChange={handleInput}></input>;
+<input className="input-field" type="number" onKeyPress={(e) => Validate(e)} onChange={handleInput}></input>;
 
 export default Child;
