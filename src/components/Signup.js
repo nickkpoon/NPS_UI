@@ -14,7 +14,7 @@ const Signup = () =>
               <a href="#" className="google_button"><img src={googleIcon} /><div className="google_signup">Sign up with Google</div></a>
           </form>
         </div>
-        <div className="social_media_buttons"><img src={twitterLogo} className="image-30"/><img src={facebookLogo}/></div>
+        <div className="social_media_buttons"><img src={twitterLogo} className="twitter_logo"/><img src={facebookLogo}/></div>
         </div>
       </div>
 

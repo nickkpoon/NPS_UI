@@ -529,12 +529,6 @@ input[type=number] {
     margin-right: auto;
     margin-left: auto;
 }
-  
-  .heading-7 {
-    margin-top: 0px;
-    margin-bottom: 42px;
-    text-align: center;
-}
 
 .signup_group {
     display: -webkit-box;
@@ -619,11 +613,11 @@ display: flex;
 justify-content: center;
 }
 
-.image-30 {
+.twitter_logo {
 margin-right: 16px;
 }
 
-.navbar-2 {
+.navbar {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -637,7 +631,7 @@ margin-right: 16px;
     background-color: transparent;
 }
 
-.nav-item {
+.nav_item {
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -660,7 +654,7 @@ margin-right: 16px;
 }
 
 
-.nav-menu {
+.nav_menu {
     position: relative;
     float: right;
 }

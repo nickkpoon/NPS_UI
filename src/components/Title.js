@@ -2,17 +2,17 @@ import React from "react";
 
 const Title = () =>
     <div>
-        <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" className="navbar-2 w-nav">
-        <nav role="navigation" className="nav-menu">
-                <a href="#" className="nav-item">Product</a>
-                <a href="#" className="nav-item">Customers</a>
-                <a href="#" className="nav-item">Enterprise</a>
-                <a href="#" className="nav-item">Pricing</a>
+        <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" className="navbar">
+        <nav role="navigation" className="nav_menu">
+                <a href="#" className="nav_item">Product</a>
+                <a href="#" className="nav_item">Customers</a>
+                <a href="#" className="nav_item">Enterprise</a>
+                <a href="#" className="nav_item">Pricing</a>
             </nav>
-            <nav role="navigation" className="nav-menu">
-                <a href="#" className="nav-item">Help</a>
-                <a href="#" className="nav-item">Get started for free</a>
-                <a href="#" className="nav-item">Sign in</a>
+            <nav role="navigation" className="nav_menu">
+                <a href="#" className="nav_item">Help</a>
+                <a href="#" className="nav_item">Get started for free</a>
+                <a href="#" className="nav_item">Sign in</a>
             </nav>
 
         </div>
