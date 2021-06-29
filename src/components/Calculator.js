@@ -49,7 +49,7 @@ const initialList = [
 ];
 
 function Calculator() {
-
+      
   const [list, setList] = useState(initialList);
   const [promotor, setPromotor] = useState(0);
   const [neutral, setNeutral] = useState(0);
