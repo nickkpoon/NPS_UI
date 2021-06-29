@@ -515,7 +515,6 @@ input[type=number] {
     margin-bottom: 0px;
     border-radius: 4px;
     border-color: #AFAFAF;
-
 }
 
 
@@ -603,18 +602,18 @@ input[type=number] {
 }
 
 .social_media_buttons {
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
-display: flex;
--webkit-box-pack: center;
--webkit-justify-content: center;
--ms-flex-pack: center;
-justify-content: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .twitter_logo {
-margin-right: 16px;
+    margin-right: 16px;
 }
 
 .navbar {
